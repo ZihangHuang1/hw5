@@ -51,6 +51,9 @@ function draw() {
     leftY += playerSpeed;
   }
   
+	leftY=puck.y - playerHeight/2;
+	rightY = puck.y - playerHeight/2;
+	
   // Ensure the paddle doesn't leave the screen
   if (leftY < 0) {
     leftY = 0;
